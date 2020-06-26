@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style= "min-width:1000px; width: auto !important; width:1000px  ; background-color :#ffffff">
+  <h1 class="text-center my-4">Tic Tac Toe</h1>
+  <div id="tic-tac-toe" class="w-100 row d-flex justify-content-center">
+    <div class="col d-flex justify-content-center">
+      <div class="input-prepend input-append mt-4" style="text-align: center; height: 200px;">
+        <h2 id="o_turn" style="height: 30px">Turn</h2>
+        <img style="height: 133px; width: 133px;" src="./assets/o-mark.png"></img>
+        <h2>won</h2>
+        <strong id="o_win" class="win_times add-on" tyle="text-align: center;">0</strong><span class="add-on"> time(s)</span>
+      </div>
+    </div>
+    <div class ="align-self-center" style="text-align: center;" id="game">
+      <div class="col pb-5 justify-content-center">
+        <div class= "mb-3">
+          <span class="add-on" style="font-size: 20px;">Game: </span><strong id="game_count" style="font-size: 20px;">1</strong>
+          <span class="add-on ml-4" style="font-size: 20px;">Tie: </span><strong id="tie_count" style="font-size: 20px;">0</strong>
+          <span class="ml-4" style="font-size: 20px;">select Box Size</span>
+          <select class="ml-2" name="box scale" id="scaleDropdown">
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+          </select>
+          <span class="ml-4" style="font-size: 20px;">Select Win Condition</span>
+          <select class="ml-2" name="win scale" id="winDropdown">
+            <option value=2>2</option>
+            <option selected="selected" value=3>3</option>
+          </select>
+        </div>
+        <div class="mb-5" style="text-align: center;">
+          <button id="reset" type="button" class="btn btn-secondary px-5 mx-2">Reset</button>
+          <button id="restart" type="button" class="btn btn-secondary px-5 mx-2">Restart</button>
+        </div>
+        <div class='d-flex justify-content-center'>
+          <div id="board2" class="align-self-center" ></div>
+        </div>
+      </div>
+    </div>
+      <div class="col d-flex justify-content-center">
+        <div class="input-prepend input-append mt-4" style="text-align: center; height: 200px;">
+          <h2 id="x_turn" style="height: 30px"></h2>
+          <img style="height: 133px; width: 133px;" src="./assets/x-mark.png"></img>
+          <h2>won</h2>
+          <strong id="x_win" class="win_times add-on">0</strong><span class="add-on"> time(s)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+  <script  src="js/index.js"></script>
+</body>
+
+</html>
